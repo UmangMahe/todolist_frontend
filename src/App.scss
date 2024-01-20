@@ -22,6 +22,9 @@
 
 .link,
 a {
+  &.link-color {
+    color: #e75b4c;
+  }
   cursor: pointer;
   transition: all 0.15s ease;
   &:hover {

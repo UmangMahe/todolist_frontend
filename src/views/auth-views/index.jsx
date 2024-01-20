@@ -164,13 +164,14 @@ function Authentication(props) {
       >
         <Form form={form}>{modalContent?.modalBody}</Form>
         <a
+            className="link-color"
           onClick={() =>
             handleModalContent(
               modalContent?.id === "login" ? "register" : "login"
             )
           }
         >
-          {modalContent?.id === "login" ? "Register" : "Login"}
+          {modalContent?.id === "login" ? "Register >" : "Login >"}
         </a>
       </Modal>
     </>
