@@ -1,0 +1,60 @@
+.header-container {
+  width: 100%;
+  transition: all 1s ease;
+
+  .header {
+    display: flex;
+    padding: 3em 0em;
+    justify-content: space-between;
+    align-items: center;
+
+    .light-heading {
+      color: gray;
+      font-weight: 100;
+    }
+
+    .tasks-heading {
+      font-size: 3em;
+      font-weight: 700;
+      margin: 0;
+      word-break: break-all;
+      color: #303030;
+    }
+
+    .right-container {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      transition: all 1s ease;
+
+      .light-heading {
+        font-size: 1.6em;
+      }
+      p {
+        margin: 0;
+      }
+
+      &:hover > .function-icon {
+        background-color: #e4412f;
+      }
+
+      .function-icon {
+        background-color: #e75b4c;
+        width: 35px;
+        height: 35px;
+        color: rgb(255, 255, 255);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+
+        .add {
+          font-weight: 300;
+          font-size: 1.75rem;
+          line-height: 1;
+        }
+      }
+    }
+  }
+}

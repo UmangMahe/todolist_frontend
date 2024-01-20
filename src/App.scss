@@ -1,0 +1,84 @@
+@import "styles/Header";
+@import "styles/Modal";
+@import "styles/Auth";
+@import "styles/NotesCard";
+
+.notes-input-container {
+  margin-bottom: 40px;
+}
+.close-cta {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #e75b4c;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.close-cta:hover {
+  color: #e02a16;
+}
+
+.link,
+a {
+  cursor: pointer;
+  transition: all 0.15s ease;
+  &:hover {
+    color: #e4412f !important;
+  }
+}
+
+.input-list-item {
+  border: 1px solid #e75b4c;
+  height: 43px;
+  font-size: 1em;
+  border-radius: 5px;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+  color: rgb(60, 60, 60);
+  box-shadow: 0px 0px 3px 1px rgb(224, 224, 224);
+  transition: all 0.2s ease;
+
+  &-large {
+    height: 52px;
+    font-size: 1.15em;
+    border-width: 2px;
+  }
+}
+
+.input-list-item[type="text"]:focus {
+  outline: none;
+  border-color: #e02a16;
+}
+
+.btn-cta {
+  text-transform: uppercase;
+  background-color: #e75b4c;
+  padding: 12px 20px;
+  font-size: 18px;
+  line-height: 1;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &-icon {
+    height: 42px !important;
+    width: 42px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &.ant-btn {
+    height: auto;
+  }
+
+  &:hover {
+    color: white !important;
+    border-color: transparent !important;
+    background-color: #e02a16;
+  }
+}
